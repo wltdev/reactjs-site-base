@@ -10,9 +10,10 @@ import { Container, Main } from './styles';
 
 export const SiteLayout = () => {
     const [sidebar, setSidebar] = useState(false);
+
     return (
         <>
-            <SidebarMenu visible={sidebar} />
+            <SidebarMenu visible={sidebar.toString()} close={() => setSidebar(false)} />
             <Container>
                 <Navbar toggleSidebar={() => setSidebar(!sidebar)} />
                 <React.Suspense fallback={<LoadingComponent />}>
