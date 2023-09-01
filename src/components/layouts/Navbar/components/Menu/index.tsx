@@ -8,7 +8,9 @@ export const Menu = () => {
                 return (
                     <MenuItem>
                         {Icon && <Icon />}
-                        <a key={index}>{title}</a>
+                        <div className="menu">
+                            <a key={index}>{title}</a>
+                        </div>
                     </MenuItem>
                 );
             })}

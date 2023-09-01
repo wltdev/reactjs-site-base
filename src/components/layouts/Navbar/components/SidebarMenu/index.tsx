@@ -1,7 +1,8 @@
 import React from 'react';
 import { IoClose } from 'react-icons/io5';
 
-import { Contact } from '../Contact';
+import { Button } from '@/components/buttons/Button';
+
 import { data } from '../Menu/data';
 import { CloseBtn, MenuItem, SidebarContainer, Siderbar } from './styles';
 
@@ -28,7 +29,7 @@ export const SidebarMenu: React.FC<Props> = ({ visible, close }) => {
                     })}
                     <MenuItem>
                         <div />
-                        <Contact />
+                        <Button title="Contact Us" handleClick={close} />
                     </MenuItem>
                 </ul>
             </Siderbar>
