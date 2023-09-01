@@ -13,3 +13,8 @@ export const MenuContainer = styled.div`
         display: none;
     }
 `;
+
+export const MenuItem = styled.div`
+    display: flex;
+    gap: 0.75rem;
+`;

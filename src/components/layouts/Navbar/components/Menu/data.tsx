@@ -1,18 +1,23 @@
-export const data = [
+type Data = {
+    title: string;
+    Icon?: string;
+};
+
+export const data: Data[] = [
     {
         title: 'Home',
-        icon: <></>
+        Icon: 'home-icon'
     },
     {
         title: 'Projects',
-        icon: <></>
+        Icon: 'projects-icon'
     },
     {
         title: 'Services',
-        icon: <></>
+        Icon: 'services-icon'
     },
     {
         title: 'About us',
-        icon: <></>
+        Icon: 'about-icon'
     }
 ];

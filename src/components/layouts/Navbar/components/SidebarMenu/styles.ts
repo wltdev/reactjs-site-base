@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 type Props = {
-    visible: string;
+    visible?: string;
 };
 
 export const SidebarContainer = styled.div<Props>`
@@ -14,16 +14,34 @@ export const SidebarContainer = styled.div<Props>`
     display: ${(props) => (props.visible === 'true' ? 'flex' : 'none')};
     justify-content: flex-end;
     transition: 0.5s;
+
+    ul {
+        margin-top: 10rem;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+    }
 `;
 
 export const Siderbar = styled.div`
     z-index: 99;
     width: 300px;
     height: 100%;
-    background-color: var(--grey);
+    background-color: #000000;
     overflow-x: hidden;
+    position: relative;
 `;
 
 export const CloseBtn = styled.div`
     cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+`;
+
+export const MenuItem = styled.li`
+    display: flex;
+    gap: 0.75rem;
 `;

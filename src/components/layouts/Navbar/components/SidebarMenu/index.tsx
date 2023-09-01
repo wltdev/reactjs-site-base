@@ -1,7 +1,9 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
 
-import { CloseBtn, SidebarContainer, Siderbar } from './styles';
+import { Contact } from '../Contact';
+import { data } from '../Menu/data';
+import { CloseBtn, MenuItem, SidebarContainer, Siderbar } from './styles';
 
 type Props = {
     visible: string;
@@ -13,21 +15,21 @@ export const SidebarMenu: React.FC<Props> = ({ visible, close }) => {
         <SidebarContainer visible={visible}>
             <Siderbar>
                 <CloseBtn onClick={close}>
-                    <FaBars />
+                    <IoClose size={30} />
                 </CloseBtn>
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                    {data.map(({ title, Icon }, index) => {
+                        return (
+                            <MenuItem>
+                                {Icon && <Icon />}
+                                <a key={index}>{title}</a>
+                            </MenuItem>
+                        );
+                    })}
+                    <MenuItem>
+                        <div />
+                        <Contact />
+                    </MenuItem>
                 </ul>
             </Siderbar>
         </SidebarContainer>

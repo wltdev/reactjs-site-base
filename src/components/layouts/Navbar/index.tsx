@@ -26,7 +26,7 @@ export const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
                         <Contact />
                     </DesktopContactContent>
                     <DesktopMobileHamburger onClick={toggleSidebar}>
-                        <FaBars />
+                        <FaBars size={20} />
                     </DesktopMobileHamburger>
                 </NavbarNav>
             </NavbarContainer>
