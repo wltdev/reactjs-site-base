@@ -15,6 +15,12 @@ export const NavbarNav = styled.nav`
 `;
 
 export const DesktopContactContent = styled.div`
+    font-size: 1.25rem;
+
+    @media (max-width: 1260px) {
+        font-size: 1rem;
+    }
+
     @media (max-width: 768px) {
         display: none;
     }

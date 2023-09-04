@@ -1,23 +1,27 @@
+import { ReactComponent as AboutIcon } from '@assets/img/icons/AboutIcon.svg';
+import { ReactComponent as HomeIcon } from '@assets/img/icons/HomeIcon.svg';
+import { ReactComponent as ServicesIcon } from '@assets/img/icons/ServicesIcon.svg';
+
 type Data = {
     title: string;
-    Icon?: string;
+    Icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 };
 
 export const data: Data[] = [
     {
         title: 'Home',
-        Icon: 'home-icon'
+        Icon: HomeIcon
     },
     {
         title: 'Projects',
-        Icon: 'projects-icon'
+        Icon: ServicesIcon
     },
     {
         title: 'Services',
-        Icon: 'services-icon'
+        Icon: ServicesIcon
     },
     {
         title: 'About us',
-        Icon: 'about-icon'
+        Icon: AboutIcon
     }
 ];

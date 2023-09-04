@@ -1,5 +1,6 @@
 import { FaBars } from 'react-icons/fa';
 
+import { ReactComponent as ContactIcon } from '@assets/img/icons/HomeGreenIcon.svg';
 import logo from '@assets/react.svg';
 
 import { Button } from '@/components/buttons/Button';
@@ -28,7 +29,11 @@ export const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
                     <img src={logo} />
                     <Menu />
                     <DesktopContactContent>
-                        <Button title="Contact us" handleClick={handleContactClick} />
+                        <Button
+                            title="Contact us"
+                            handleClick={handleContactClick}
+                            Icon={ContactIcon}
+                        />
                     </DesktopContactContent>
                     <DesktopMobileHamburger onClick={toggleSidebar}>
                         <FaBars size={20} />

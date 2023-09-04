@@ -1,6 +1,8 @@
 import React from 'react';
 import { IoClose } from 'react-icons/io5';
 
+import { ReactComponent as ContactIcon } from '@assets/img/icons/HomeGreenIcon.svg';
+
 import { Button } from '@/components/buttons/Button';
 
 import { data } from '../Menu/data';
@@ -21,15 +23,15 @@ export const SidebarMenu: React.FC<Props> = ({ visible, close }) => {
                 <ul>
                     {data.map(({ title, Icon }, index) => {
                         return (
-                            <MenuItem>
+                            <MenuItem key={index}>
                                 {Icon && <Icon />}
-                                <a key={index}>{title}</a>
+                                <a>{title}</a>
                             </MenuItem>
                         );
                     })}
                     <MenuItem>
                         <div />
-                        <Button title="Contact Us" handleClick={close} />
+                        <Button title="Contact Us" handleClick={close} Icon={ContactIcon} />
                     </MenuItem>
                 </ul>
             </Siderbar>

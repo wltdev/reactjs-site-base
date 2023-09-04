@@ -6,11 +6,9 @@ export const Menu = () => {
         <MenuContainer>
             {data.map(({ title, Icon }, index) => {
                 return (
-                    <MenuItem>
+                    <MenuItem key={index}>
                         {Icon && <Icon />}
-                        <div className="menu">
-                            <a key={index}>{title}</a>
-                        </div>
+                        <a>{title}</a>
                     </MenuItem>
                 );
             })}

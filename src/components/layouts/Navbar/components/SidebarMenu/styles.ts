@@ -42,6 +42,18 @@ export const CloseBtn = styled.div`
 `;
 
 export const MenuItem = styled.li`
+    width: 100%;
+    font-size: 1.25rem;
     display: flex;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    a {
+        white-space: nowrap;
+    }
 `;
