@@ -6,16 +6,22 @@ export const BannerContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 600px;
+    padding: 4rem 0;
+
+    gap: 15px;
 
     @media (max-width: 768px) {
         min-height: unset;
     }
 
     h1 {
-        font-family: SharpGrotesk;
-        text-align: center;
+        margin: 0;
         max-width: 800px;
+        font-family: SharpGrotesk;
+        font-weight: 700;
+        text-align: center;
         font-size: 130px;
         text-transform: uppercase;
 
@@ -25,5 +31,15 @@ export const BannerContainer = styled.section`
             font-size: 50px;
             line-height: 43px;
         }
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.6875rem;
+        color: #ffffff;
+        max-width: 800px;
+        text-align: center;
     }
 `;
