@@ -1,8 +1,10 @@
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 import { ReactComponent as ContactIcon } from '@assets/img/icons/SendIcon.svg';
 
 import { Button } from '@/components/buttons/Button';
 
-import { BannerContainer, ButtonWrapper } from './styles';
+import { BannerContainer, ButtonWrapper, SocialIcons, SocialWrapper } from './styles';
 
 export const Banner = () => {
     const handleButtonClick = () => {
@@ -11,6 +13,15 @@ export const Banner = () => {
 
     return (
         <BannerContainer>
+            <SocialWrapper>
+                <SocialIcons>
+                    <FaFacebook size={40} color="#FFFF" />
+                    <FaInstagram size={40} color="#FFFF" />
+                    <FaWhatsapp size={40} color="#FFFF" />
+                </SocialIcons>
+                <div>V</div>
+            </SocialWrapper>
+
             <h1>We are specialist in web development</h1>
 
             <p>
@@ -23,6 +34,7 @@ export const Banner = () => {
                     title="Request proposal"
                     handleClick={handleButtonClick}
                     Icon={ContactIcon}
+                    size="big"
                 />
             </ButtonWrapper>
         </BannerContainer>

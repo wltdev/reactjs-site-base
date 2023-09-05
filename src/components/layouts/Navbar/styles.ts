@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const NavbarContainer = styled.header`
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 0.5px solid #5c5c5c;
 `;
 
 export const NavbarNav = styled.nav`
@@ -11,13 +11,11 @@ export const NavbarNav = styled.nav`
     justify-content: space-between;
 
     align-items: center;
-    padding: 1.25rem;
+    padding: 1rem 0;
     gap: 1.3rem;
 `;
 
 export const LogoWrapper = styled.div`
-    /* width: 100%; */
-
     max-width: 200px;
     min-width: 80px;
 

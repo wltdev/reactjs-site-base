@@ -6,8 +6,8 @@ export const MenuContainer = styled.div`
     justify-content: space-between;
     gap: 5rem;
     border: 1px solid var(--grey);
-    padding: 1rem 2.125rem;
-    border-radius: 36px;
+    padding: 1.25rem 2.125rem;
+    border-radius: 3rem;
 
     @media (max-width: 1260px) {
         gap: 2.5rem;
@@ -45,5 +45,7 @@ export const MenuItem = styled.div`
 
     a {
         white-space: nowrap;
+        letter-spacing: -3px;
+        font-size: 1.25rem;
     }
 `;

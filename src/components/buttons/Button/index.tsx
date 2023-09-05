@@ -8,7 +8,7 @@ type Props = {
 };
 export const Button: React.FC<Props> = ({ title, handleClick, size, Icon }) => {
     return (
-        <ButtonContainer onClick={handleClick} size={size}>
+        <ButtonContainer onClick={handleClick} className={size}>
             {title}
             {Icon && <Icon />}
         </ButtonContainer>

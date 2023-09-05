@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 
 export const BannerContainer = styled.section`
+    position: relative;
     flex: 1;
     width: 100%;
     display: flex;
@@ -8,7 +9,7 @@ export const BannerContainer = styled.section`
     align-items: center;
     justify-content: center;
     min-height: 600px;
-    padding: 4rem 0;
+    padding: 7rem 0;
 
     gap: 15px;
 
@@ -49,4 +50,20 @@ export const ButtonWrapper = styled.div`
         width: 15px;
         height: 15px;
     }
+`;
+
+export const SocialWrapper = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    top: 1rem;
+    right: -10px;
+`;
+
+export const SocialIcons = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 `;
