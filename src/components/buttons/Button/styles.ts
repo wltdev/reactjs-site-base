@@ -11,6 +11,13 @@ export const ButtonContainer = styled.button<Props>`
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--secondary);
+
+    &:focus,
+    :active {
+        border-color: #1bf6556e;
+        outline: unset;
+    }
 
     &:hover {
         border-color: #1bf6556e;

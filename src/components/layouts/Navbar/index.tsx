@@ -1,7 +1,7 @@
 import { FaBars } from 'react-icons/fa';
 
 import { ReactComponent as ContactIcon } from '@assets/img/icons/HomeGreenIcon.svg';
-import logo from '@assets/react.svg';
+import logo from '@assets/img/rockwool-logo-png-transparent.svg';
 
 import { Button } from '@/components/buttons/Button';
 
@@ -9,6 +9,7 @@ import { Menu } from './components/Menu';
 import {
     DesktopContactContent,
     DesktopMobileHamburger,
+    LogoWrapper,
     NavbarContainer,
     NavbarNav
 } from './styles';
@@ -26,7 +27,9 @@ export const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
         <>
             <NavbarContainer>
                 <NavbarNav>
-                    <img src={logo} />
+                    <LogoWrapper>
+                        <img src={logo} />
+                    </LogoWrapper>
                     <Menu />
                     <DesktopContactContent>
                         <Button

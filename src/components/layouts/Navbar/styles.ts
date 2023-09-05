@@ -9,9 +9,23 @@ export const NavbarNav = styled.nav`
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     padding: 1.25rem;
-    /* gap: 1.3rem; */
+    gap: 1.3rem;
+`;
+
+export const LogoWrapper = styled.div`
+    /* width: 100%; */
+
+    max-width: 200px;
+    min-width: 80px;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 `;
 
 export const DesktopContactContent = styled.div`
