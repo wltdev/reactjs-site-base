@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const NavbarContainer = styled.header`
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--grey);
 `;
 
 export const NavbarNav = styled.nav`

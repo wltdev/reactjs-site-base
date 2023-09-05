@@ -6,6 +6,7 @@ type Props = {
 export const ButtonContainer = styled.button<Props>`
     border: 2px solid var(--secondary);
     border-radius: 1.375rem;
+    background-color: transparent;
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;

@@ -43,3 +43,10 @@ export const BannerContainer = styled.section`
         text-align: center;
     }
 `;
+
+export const ButtonWrapper = styled.div`
+    svg {
+        width: 15px;
+        height: 15px;
+    }
+`;
